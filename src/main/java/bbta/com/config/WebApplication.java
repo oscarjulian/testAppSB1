@@ -6,8 +6,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan(basePackages={"bbta.com"})
 @SpringBootApplication
-@ComponentScan(basePackages={"bbta.com.controller"})
 public class WebApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
